@@ -1,12 +1,11 @@
 import { Link, NavLink, useSearchParams } from "react-router-dom";
-import logo33 from '../assets/images/logo33.png';
 import { useEffect, useState } from "react";
 
 
 
 
 
-export const Header = () => {
+  function Header ()  {
   
   const [hidden, setHidden] = useState(false); 
   const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode") || true));
@@ -34,7 +33,7 @@ export const Header = () => {
               target="_blank"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
-              <img src={logo33} className="h-8" alt="dESS_movie logo" />
+              <img src={""} className="h-8" alt="dESS_movie logo" />
               <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">
                 dESS_movie
               </span>
@@ -247,3 +246,4 @@ export const Header = () => {
     );
 }
 
+export default Header;

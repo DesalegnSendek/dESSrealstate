@@ -1,16 +1,20 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Link } from 'react-router-dom';
 import Home from "";
 import Profile from "./pages/Profile";
 import Offers from "./pages/Offers";
 import Signup from "./pages/Signup";
 import SignIn from "./pages/SignIn";
 import ForgotPassword from "./pages/ForgotPassword";
+import  Header  from './components/Header';
+import  Footer  from "./components/Footer";
+
 
 function App() {
   return (
     <div className="App">
       <Router>
+      <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
@@ -19,6 +23,7 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

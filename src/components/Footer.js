@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import Logo from '../assets/images/logo33.png';
-export const Footer = () => {
+
+
+ function Footer() {
   return (
     <footer>
       <footer className="bg-white shadow dark:bg-gray-900 m-4">
@@ -10,7 +11,7 @@ export const Footer = () => {
               to="/"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
-              <img src={Logo} className="h-8" alt="dESS_movie" />
+              <img src={""} className="h-8" alt="dESS_movie" />
 
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 dESS_movie
@@ -22,7 +23,7 @@ export const Footer = () => {
                 <a
                   href="http://www.facebook.com/desalegn"
                   target="_blank"
-                  rel=""
+                  rel="noreferrer"
                   className="hover:underline me-4 md:me-6"
                 >
                   About
@@ -33,6 +34,7 @@ export const Footer = () => {
                 <a
                   href="http://www.facebook.com/desalegn"
                   target="_blank"
+                  rel="noreferrer"
                   className="hover:underline me-4 md:me-6"
                 >
                   Privacy Policy
@@ -43,6 +45,7 @@ export const Footer = () => {
                 <Link
                   href="http://www.facebook.com/desalegn"
                   target="_blank"
+                  rel="noreferrer"
                   className="hover:underline me-4 md:me-6"
                 >
                   Licensing
@@ -53,6 +56,7 @@ export const Footer = () => {
                 <a
                   href="http://www.facebook.com/desalegn"
                   target="_blank"
+                  rel="noreferrer"
                   className="hover:underline"
                 >
                   Contact
@@ -69,8 +73,10 @@ export const Footer = () => {
             </Link>
             . All Rights Reserved.
           </span>
-        </div> 
+        </div>
       </footer>
     </footer>
   );
 }
+
+export default Footer;
